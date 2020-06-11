@@ -45,7 +45,7 @@ $person = isset($_POST['person']) ? $_POST['person'] : null;
     <hr>
 
 
-    <form method="get" action="<?=$_SERVER['REQUEST_URI'];?>">
+    <form method="post" action="<?=$_SERVER['REQUEST_URI'];?>">
         <p><label for="firstName">First name</label> <input type="text" name="person[first_name]" id="firstName"></p>
         <p><label for="lastName">Last name</label> <input type="text" name="person[last_name]" id="lastName"></p>
         <p><label for="email">Email</label> <input type="text" name="person[email]" id="email"></p>
