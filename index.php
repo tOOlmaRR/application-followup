@@ -4,7 +4,7 @@ namespace eBaseInterviewExercise;
 
 class Interview
 {
-    public $title = 'Interview test';
+    public static $title = 'Interview test';
 }
 
 $lipsum = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus incidunt, quasi aliquid, quod officia commodi magni eum? Provident, sed necessitatibus perferendis nisi illum quos, incidunt sit tempora quasi, pariatur natus.';
