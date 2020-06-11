@@ -71,9 +71,9 @@ $person = isset($_POST['person']) ? $_POST['person'] : null;
         <tbody>
             <?php foreach ($people as $person) : ?>
                 <tr>
-                    <td><?=$person->first_name;?></td>
-                    <td><?=$person->last_name;?></td>
-                    <td><?=$person->email;?></td>
+                    <td><?=$person['first_name'];?></td>
+                    <td><?=$person['last_name'];?></td>
+                    <td><?=$person['email'];?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
