@@ -17,7 +17,7 @@ $people = array(
     array('id'=>5, 'first_name'=>'Doug', 'last_name'=>'Simons', 'email'=>'doug.simons@hotmail.com')
 );
 
-$person = $_POST['person'];
+$person = isset($_POST['person']) ? $_POST['person'] : null;
 
 ?>
 
@@ -52,8 +52,8 @@ $person = $_POST['person'];
         <p><input type="submit" value="Submit" /></p>
     </form>
 
-    <?php if ($person) : ?>
-        <p><strong>Person</strong> <?=$person['first_name'];?>, <?=$person['last_name'];?>, <?=$person['email'];?></p>
+    <?php if (isset($person)) : ?>
+        <p><strong>Person</strong> <?=$person['first_name'] ?? '';?>, <?=$person['last_name'] ?? '';?>, <?=$person['email'] ?? '';?></p>
     <?php endif; ?>
 
 
